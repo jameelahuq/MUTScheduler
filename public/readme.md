@@ -1,5 +1,31 @@
 # MUTScheduler
 
+
+//scotch oauth passport tutorial
+        **removed ejs
+        **removed passport-local
+		    "express" : "~4.0.0", (required)
+        "mongoose" : "~3.8.1", (required)
+        "passport" : "~0.1.17", (required)
+        "passport-facebook" : "~1.0.2",
+        "passport-twitter" : "~1.0.2",
+        "passport-google-oauth" : "~0.1.5",
+        "connect-flash" : "~0.1.1", (required)
+        "bcrypt-nodejs" : "latest",
+        "morgan": "~1.0.0", (required)
+        "body-parser": "~1.0.0", (required)
+        "cookie-parser": "~1.0.0", (required)
+        "method-override": "~1.0.0",
+        "express-session": "~1.0.0" (required)
+
+
+
+
+
+//calendar tutorial
+
+
+
 Teamsnap:
 	people who have been cast
 	neil perform
