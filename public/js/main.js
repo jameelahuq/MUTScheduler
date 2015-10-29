@@ -1,8 +1,14 @@
 /**
  * Created by HUQ on 10/26/15.
  */
+'use strict';
+
+//require('./ctrls/LoginCtrl.js');
+
+
 var app = angular.module('peepiq', ['ui.router']); //ui.calendar if we cdn it earlier??
 console.log("ngApp is running");
+
 
 //app.constant('constants', {
 //  apiUrl: 'http://localhost:3000'
@@ -32,14 +38,7 @@ app.config(function($stateProvider, $controllerProvider, $urlRouterProvider) {
 
 
 
-app.controller('LoginCtrl', function($scope, $location, $http, $state) {
-  console.log("loginCtrl loaded");
-  $scope.login = function() {
-    window.location.href = "https://api.imgur.com/oauth2/authorize?client_id=" + "CLIENT_ID_HERE" + "&response_type=token";
-    return false;
-  };
 
-});
 
 
 app.controller('CalendarCtrl', function ($scope, $compile, $timeout, uiCalendarConfig) {

@@ -10,6 +10,9 @@
   color: white;
   font-weight: bold;
 }
+.button {
+  border-radius: 5px;
+}
 
 /*body {*/
  /*margin: 40px 10px;*/
