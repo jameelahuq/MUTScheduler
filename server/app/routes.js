@@ -1,65 +1,51 @@
-/**
- * Created by HUQ on 10/28/15.
- */
 // app/routes.js
+
 module.exports = function(app, passport) {
 
-  //TODO:figure out all the cool stuff they are doing in the routes.js page and DOIT
-  // =====================================
-  // HOME PAGE (with login links) ========
-  // =====================================
-
-  //TODO: already have an index page in angular?
+  // route for home page
+  //TODO: go to our frontend page
   app.get('/', function(req, res) {
-    //res.render('index.ejs'); // load the index.ejs file
+    res.render('index.ejs'); // load the index.ejs file
   });
 
-  // =====================================
-  // LOGIN ===============================
-  // =====================================
-  // show the login form
-  //TODO: should I keep this?
-  app.get('/login', function(req, res) {
+  // route for login form
+  // route for processing the login form
+  // route for signup form
+  // route for processing the signup form
 
-    //TODO: we already have a login page...
-    // render the page and pass in any flash data if it exists
-    //res.render('login.ejs', { message: req.flash('loginMessage') });
-  });
-
-  // process the login form
-  // app.post('/login', do all our passport stuff here);
-
-  // =====================================
-  // SIGNUP ==============================
-  // =====================================
-  // show the signup form
-  app.get('/signup', function(req, res) {
-
-    //TODO: we already have a signup page...
-    //res.render('signup.ejs', { message: req.flash('signupMessage') });
-  });
-
-  // process the signup form
-  // app.post('/signup', do all our passport stuff here);
-
-  // =====================================
-  // PROFILE SECTION =====================
-  // =====================================
-  // we will want this protected so you have to be logged in to visit
-  // we will use route middleware to verify this (the isLoggedIn function)
+  // route for showing the profile page
   app.get('/profile', isLoggedIn, function(req, res) {
+    //TODO: this page will be frontend
     res.render('profile.ejs', {
       user : req.user // get the user out of session and pass to template
     });
   });
 
-  // =====================================
-  // LOGOUT ==============================
-  // =====================================
+  // route for logging out
   app.get('/logout', function(req, res) {
     req.logout();
     res.redirect('/');
   });
+
+  // facebook routes
+  // twitter routes
+
+  // =====================================
+  // GOOGLE ROUTES =======================
+  // =====================================
+  // send to google to do the authentication
+  // profile gets us their basic information including their name
+  // email gets their emails
+  app.get('/auth/google', passport.authenticate('google', { scope : ['profile', 'email'] }));
+
+  // the callback after google has authenticated the user
+  app.get('/auth/google/callback',
+      passport.authenticate('google', {
+        //TODO: so this redirect will go to the frontpage
+        successRedirect : '/profile',
+        failureRedirect : '/'
+      }));
+
 };
 
 // route middleware to make sure a user is logged in
