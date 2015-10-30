@@ -25,6 +25,11 @@ app.config(function($stateProvider, $controllerProvider, $urlRouterProvider) {
         templateUrl: 'views/login.html',
         controller: 'LoginCtrl'
       })
+      .state('signup', {
+        url: '/signup',
+        templateUrl: 'views/signup.html',
+        controller: 'SignupCtrl'
+      })
       .state('calendar', {
         url: '/calendar',
         templateUrl: 'views/ui-cal.html',
@@ -37,7 +42,9 @@ app.config(function($stateProvider, $controllerProvider, $urlRouterProvider) {
 });
 
 
-
+app.controller('SignupCtrl', function($scope) {
+  console.log("signup page");
+});
 
 
 
