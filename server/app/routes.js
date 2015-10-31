@@ -10,15 +10,25 @@ module.exports = function(app, passport) {
 
   // route for login form
   // route for processing the login form
-  // route for signup form
+  // process the signup form
+  //TODO: make your post request
+  //app.post('/signup', passport.authenticate('local-signup', {
+  //  successRedirect : '/profile', // redirect to the secure profile section
+  //  failureRedirect : '/signup', // redirect back to the signup page if there is an error
+  //  failureFlash : true // allow flash messages
+  //}));
+
   // route for processing the signup form
 
   // route for showing the profile page
   app.get('/profile', isLoggedIn, function(req, res) {
+    console.log("retrieving user credentials");
+    res.send(req.user);
+
     //TODO: this page will be frontend
-    res.render('profile.ejs', {
-      user : req.user // get the user out of session and pass to template
-    });
+    //res.render('profile.ejs', {
+    //  user : req.user // get the user out of session and pass to template
+    //});
   });
 
   // route for logging out
@@ -27,8 +37,10 @@ module.exports = function(app, passport) {
     res.redirect('/');
   });
 
-  // facebook routes
-  // twitter routes
+
+
+  //TODO: facebook routes
+
 
   // =====================================
   // GOOGLE ROUTES =======================
