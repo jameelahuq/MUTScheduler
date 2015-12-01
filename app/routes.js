@@ -1,7 +1,7 @@
 // app/routes.js
 
 module.exports = function(app, passport) {
-
+  //var frontUrl = http://localhost
   // route for home page
   //TODO: go to our frontend page
   app.get('/', function(req, res) {
@@ -54,6 +54,7 @@ module.exports = function(app, passport) {
   app.get('/auth/google/callback',
       passport.authenticate('google', {
         //TODO: so this redirect will go to the frontpage
+        //successRedirect: ,
         successRedirect : '/profile',
         failureRedirect : '/'
       }));

@@ -25,17 +25,16 @@ app.config(function($stateProvider, $urlRouterProvider) { //$controllerProvider
         templateUrl: 'views/login.html',
         controller: 'LoginCtrl'
       })
-      //.state('signup', {
-      //  url: '/signup',
-      //  templateUrl: 'views/signup.html',
-      //  controller: 'SignupCtrl'
-      //})
-      .state('calendar', {
-        url: '/calendar',
-        templateUrl: 'views/ui-cal.html',
-        controller: "CalendarCtrl"
+      .state('admin', {
+        url: '/admin',
+        templateUrl: 'views/admin.html',
+        controller: 'AdminCtrl'
+      })
+      .state('profile', {
+        url: '/profile',
+        templateUrl: 'views/profile.html',
+        controller: 'ProfileCtrl'
       });
-
 
   //app.registerCtrl = $controllerProvider.register;
 

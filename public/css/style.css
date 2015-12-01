@@ -3,13 +3,76 @@
 /*}*/
 
 /*.*/
+body {
+  font-size: 14px;
+  color: white;
+  font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+  background-image: url("../images/purple.jpg");
+  background-size: cover;
+}
 
+#wrap {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.events {
+  margin-bottom: 10px;
+  float: left;
+  width: 160px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  background: #eee;
+  text-align: left;
+}
+
+.events h4 {
+  font-size: 16px;
+  margin-top: 0;
+  padding-top: 1em;
+}
+
+.events .fc-event {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.events p {
+  margin: 1.5em 0;
+  font-size: 11px;
+  color: #666;
+}
+
+.events p input {
+  margin: 0;
+  vertical-align: middle;
+}
+
+#calendar {
+  float: right;
+  width: 900px;
+}
+
+.fc-center h2 {
+  color: aliceblue;
+}
+
+.fc-head table {
+  margin-bottom: 0;
+}
+
+
+
+.panel.headBar h4 {
+  color: aliceblue;
+}
 
 .headBar {
   background-color: black;
   color: white;
   font-weight: bold;
 }
+
 .button {
   border-radius: 5px;
 }
@@ -21,9 +84,8 @@
  /*font-size: 14px;*/
 /*}*/
 
-#calendar {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
+/*#calendar {*/
+  /*max-width: 900px;*/
+  /*margin: 0 auto;*/
+/*}*/
 
