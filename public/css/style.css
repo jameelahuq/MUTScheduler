@@ -49,35 +49,42 @@ body {
 }
 
 /*yes no maybe buttons*/
-button.on, button.off {
+.yesNoMaybe {
+  display: inline-block;
+  margin: 0;
+}
+
+.yesNoMaybe button {
   background: none;
   padding: 0;
+  margin: 0;
 }
 
-.yes.on {
+.fa-check-circle {
   color: green;
+
 }
 
-.yes.off {
+.fa-check {
   color: green;
   opacity: .4;
 }
 
-.maybe.on {
+.fa-question-circle {
   color: gold;
 
 }
 
-.maybe.off {
+.fa-question {
   color: gold;
   opacity: .7;
 }
 
-.no.on {
+.fa-times-circle {
   color: red;
 }
 
-.no.off {
+.fa-times {
   color: darkred;
   opacity: .3;
 }
