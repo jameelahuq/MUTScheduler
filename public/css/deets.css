@@ -19,3 +19,12 @@
 .yes, .no, .maybe {
   font-size: 30px;
 }
+
+
+.staffHeader button,
+.usersRequested button {
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+}

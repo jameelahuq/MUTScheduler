@@ -75,29 +75,31 @@ li {
 
 }
 
-.fa-check {
-  color: green;
-  opacity: .4;
-}
-
-.fa-question-circle {
-  color: gold;
-
-}
-
-.fa-question {
-  color: gold;
-  opacity: .7;
-}
-
 .fa-times-circle {
   color: red;
 }
 
-.fa-times {
-  color: darkred;
-  opacity: .3;
+.fa-pause-circle {
+  color: gold;
 }
+
+.fa-question-circle {
+  color: grey;
+}
+.fa-check, .fa-times, .fa-pause {
+  color: lightgray;
+}
+
+/*.fa-check {*/
+  /**/
+/*}*/
+
+/*.fa-pause {*/
+/*}*/
+
+
+/*.fa-times {*/
+/*}*/
 
 
 

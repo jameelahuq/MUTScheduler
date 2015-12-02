@@ -8,7 +8,9 @@
 
     <div class="profileRight medium-6 right">
       <div class="meishi">
-        <h1 class="eventName"></span>Event Name like Five Play or Made-Up-Shakespeare</h1>
+        <h1 class="eventName">
+          <i class="fa fa-lock"></i>
+          </span>Event Name like Five Play or Made-Up-Shakespeare</h1>
         <br>
         <h3 class="scheduled">
           <span class="fa fa-calendar-plus-o"></span>
@@ -16,7 +18,7 @@
         </h3>
         <br>
         <h4>
-          <span class="maybe on"><i class="fa fa-question-circle"></i></span>
+          <span class="maybe on"><i class="fa fa-pause-circle"></i></span>
           <span>Still requesting 3 people for this event</span>
         </h4>
         <ul class="staffClasses"><li>House</li><li> * Piano</li><li> * Host</li> </ul>
@@ -29,10 +31,10 @@
 
     <div class="deetsLeft medium-6">
       <h1><span class="fa fa-users"></span> Staff</h1>
-      <span>If you can not attend an accepted event, please contact staff@madeuptheatre.com asap</span>
+      <span>This event is locked. If you can not attend an accepted event, please contact staff@madeuptheatre.com</span>
       <br>
       <br>
-      <h4>Cast</h4>
+      <h4>Cast <i class="fa fa-plus"></i></h4>
       <ul class="usersRequested">
         <li class="usersScheduled">
 
@@ -79,7 +81,7 @@
 
         <li class="usersOnDeck">
         <li class="requestHeading maybe">
-          <i class="fa fa-question-circle"></i>
+          <i class="fa fa-pause-circle"></i>
         </li>
 
         <li class="userLineItem">
@@ -119,7 +121,7 @@
 
         </li>
       </ul>
-        <h4>Tech</h4>
+        <h4>Tech <i class="fa fa-plus"></i></h4>
         <ul class="usersRequested">
           <li class="usersScheduled">
 
@@ -138,7 +140,7 @@
 
           <li class="usersOnDeck">
             <li class="requestHeading maybe">
-              <i class="fa fa-question-circle"></i>
+              <i class="fa fa-pause-circle"></i>
             </li>
 
             <li class="userLineItem">
@@ -172,26 +174,58 @@
           </li>
         </ul>
 
-        <h4>House</h4>
+        <div class="staffHeader">
+          <form class="addStaff">
+
+              <div class="row">
+                <div class="small-8">
+                  <div class="row">
+                    <div class="small-3 columns">
+                      <label class="right"><h4>House</h4></label>
+                    </div>
+                    <div class="small-6 columns">
+                      <select>
+                        <option>None Selected </option>
+                        <option>Miss Person</option>
+                        <option>Mister Person </option>
+                        <option>Miss Person</option>
+                      </select>
+                      <!--<input type="text" id="right-label" placeholder="Inline Text Input">-->
+                    </div>
+                    <div class="medium-3 columns">
+                      <button><h4><i class="fa fa-plus"></i></h4></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+          </form>
+        </div>
+
+
+
       <ul class="usersRequested">
         <li class="usersScheduled">
 
-        <li class="requestHeading yes">
-          <i class="fa fa-check-circle"></i>
-        </li>
+          <li class="requestHeading yes">
+            <button ng-click="adminPrompt()">
+              <i class="fa fa-check-circle"></i>
+            </button>
+          </li>
 
-        <li class="userLineItem">
-          <a href="#/profile">
-            <i class="fa fa-github"></i>
-            <span class="userName">Jameela Of Course</span>
-          </a>
-        </li>
+          <li class="userLineItem">
+            <a href="#/profile">
+              <i class="fa fa-github"></i>
+              <span class="userName">Jameela Of Course</span>
+            </a>
+          </li>
 
         </li>
 
         <li class="usersOnDeck">
         <li class="requestHeading maybe">
-          <i class="fa fa-question-circle"></i>
+          <i class="fa fa-pause-circle"></i>
         </li>
 
         <li class="userLineItem">
@@ -225,7 +259,7 @@
         </li>
       </ul>
 
-        <h4>Piano</h4>
+        <h4>Piano <i class="fa fa-plus"></i></h4>
       <ul class="usersRequested">
         <li class="usersScheduled">
 

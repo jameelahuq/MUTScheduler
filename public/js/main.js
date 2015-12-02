@@ -50,7 +50,11 @@ app.config(function($stateProvider, $urlRouterProvider) { //$controllerProvider
 //  console.log("signup page");
 //});
 
+app.controller('DeetsCtrl', function ($scope) {
+  $scope.adminPrompt = {
 
+  }
+});
 
 app.controller('CalendarCtrl', function ($scope, $compile, $timeout, uiCalendarConfig) {
   console.log("CalendarCtrl loaded");
