@@ -48,6 +48,16 @@ body {
   vertical-align: middle;
 }
 
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 7px;
+  /*border: 1px solid grey;*/
+}
+
 /*yes no maybe buttons*/
 .yesNoMaybe {
   display: inline-block;

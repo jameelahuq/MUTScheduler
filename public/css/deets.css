@@ -1,0 +1,21 @@
+.staffClasses li,
+.requestHeading,
+.userLineItem {
+  display: inline;
+}
+
+.staffClasses {
+  white-space: nowrap;
+  font-size: 25px;
+
+}
+
+
+/*wirefram class only*/
+.fa-github {
+  font-size:30px;
+}
+
+.yes, .no, .maybe {
+  font-size: 30px;
+}
