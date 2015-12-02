@@ -30,6 +30,11 @@ app.config(function($stateProvider, $urlRouterProvider) { //$controllerProvider
         templateUrl: 'views/admin.html',
         controller: 'AdminCtrl'
       })
+      .state('deets', {
+        url: '/deets',
+        templateUrl: 'views/deets.html',
+        controller: 'DeetsCtrl'
+      })
       .state('profile', {
         url: '/profile',
         templateUrl: 'views/profile.html',

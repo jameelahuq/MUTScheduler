@@ -48,6 +48,42 @@ body {
   vertical-align: middle;
 }
 
+/*yes no maybe buttons*/
+button.on, button.off {
+  background: none;
+  padding: 0;
+}
+
+.yes.on {
+  color: green;
+}
+
+.yes.off {
+  color: green;
+  opacity: .4;
+}
+
+.maybe.on {
+  color: gold;
+
+}
+
+.maybe.off {
+  color: gold;
+  opacity: .7;
+}
+
+.no.on {
+  color: red;
+}
+
+.no.off {
+  color: darkred;
+  opacity: .3;
+}
+
+
+
 #calendar {
   float: right;
   width: 900px;
